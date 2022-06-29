@@ -1,3 +1,4 @@
 prow/cluster/*
 vendor/*
 third_party/*
+*
