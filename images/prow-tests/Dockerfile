@@ -13,6 +13,8 @@
 # limitations under the License.
 
 FROM debian:bullseye-20221004-slim AS base
+FROM golang:1.18.10 as goStable
+go version
 
 # Pinned versions of stuff we pull in
 ARG CLOUD_SDK_VERSION=405.0.0
