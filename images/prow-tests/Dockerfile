@@ -187,7 +187,7 @@ COPY images/prow-tests/in-gvm-env.sh /usr/local/bin
 # But it must be done in base or the last FROM, because it does not install to /go/bin
 
 ############################################################
-FROM golang:1.19 AS external-go-gets
+FROM golang:1.20 AS external-go-gets
 
 ARG KUBETEST2_VERSION=d306c412d528f0a5dda4b6bd1c7550a905f5edb9
 ARG KUBETEST2_KOPS_VERSION=9b957a1d6189ee612506c9b6dc5b8b1a19e9c2aa # v1.25.0 release
