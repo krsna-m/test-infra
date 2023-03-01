@@ -1,0 +1,9 @@
+version: 2
+updates:
+  # Enable version updates for Docker
+  - package-ecosystem: "docker"
+    # Use the `Dockerfile` in the `prow-tests` directory
+    directory: "/images/prow-tests/"
+    # Check for updates once a day
+    schedule:
+      interval: "daily"
