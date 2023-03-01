@@ -13,6 +13,7 @@
 # limitations under the License.
 
 FROM debian:bullseye-20221004-slim AS base
+FROM golang:1.18 as blah
 FROM golang:1.19.0 as goStable
 go version
 
