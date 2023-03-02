@@ -5,5 +5,5 @@ updates:
     schedule:
       interval: "daily"
     ignore:
-      - dependency-name: "go1.19.*"
+      - dependency-name: "go1.19*"
         update-types: ["version-update:semver-major", "version-update:semver-minor"]
