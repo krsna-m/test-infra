@@ -152,8 +152,8 @@ RUN java -version && \
 #
 
 ############################################################
-FROM golang:1.18.2 AS test-go
-FROM golang:1.19.6 AS external-go-gets
+FROM golang:1.20.1 AS test-go
+FROM golang:1.20.1 AS external-go-gets
 # Capture the version that depndabot bumps so that we can install it into the base image
 RUN go version | cut -d' ' -f3 > /golang_version.latest
 
