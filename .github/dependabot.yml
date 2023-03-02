@@ -7,7 +7,3 @@ updates:
     ignore:
       - dependency-name: "go1.19.*"
         update-types: ["version-update:semver-major", "version-update:semver-minor"]
-  - package-ecosystem: "docker"
-    directory: "/images/prow-tests/"
-    schedule:
-      interval: "daily"
